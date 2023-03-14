@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+       <title>Makovkina</title>
+
+</head>
+<body>
+<h1 align=center>Персональная страничка Маковкиной Анжелики</h1>
+<hr color=0099FF width=100%>
+<p>Факт обо мне: мне очень нравится фигурное катание, я смотрю очень многие соревнования</p>
+<p>Мои увлечения</p>
+<ul>
+    <li> Увлекаюсь фотографией
+    <li> Смотрю фигурное катание
+    <li> Читаю книги и слушаю музыку
+</ul>
+<img src=123.jpg width=200>
+<h2>Галерея фотографий</h2>
+
+<table border=1>
+    <tr>
+      <td><img src=123.jpg width=200></td>
+      <td><img src=129.jpg width=200</td>
+      <td><img src=50.jpg width=200></td>
+    </tr>
+      <td><img src=126.jpg width=200></td>
+      <td><img src=127.jpg width=200></td>
+      <td><img src=130.jpg width=200></td>
+    </tr>
+      <td><img src=200.jpg width=200></td>
+      <td><img src=160.jpg width=200></td>
+      <td><img src=150.jpg width=200></td>
+    
+    </tr>
+
+</table>
+<h3>Нажмите, чтобы оставить мнение о галерее фотографий</h3>
+<button onclick="myFunction()">Нажми</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Вам понравилась галерея фотографий?")) {
+        txt = "Понравилась!";
+    } else {
+        txt = "Не понравилась!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
